@@ -8,7 +8,7 @@ As pastas dos objetos devem estar preparadas para sua visualização na internet
 
 ---
 
-### Inserindo os Links via Tainacan
+### 4.1. Inserindo os Links via Tainacan
 
 Para inserção dos links como campo dentro das informações da obra, é necessário criar um metadado com esse intuito. Através da interface do Tainacan, basta seguir os passos:
 
