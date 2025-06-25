@@ -1,3 +1,40 @@
+## O que é o Wordpress?
+
+WordPress é um sistema de gerenciamento de conteúdo de código aberto, utilizado para criar, gerenciar e manter sites e blogs. Ele permite que usuários criem websites dinâmicos sem precisar de habilidades avançadas de programação.
+
+## Principais Características Técnicas:
+
+- Código Aberto: O WordPress é gratuito e de código aberto, o que significa que qualquer pessoa pode usar, modificar e distribuir o software.
+
+## Temas e Plugins:
+
+Temas controlam o design e a aparência do site.
+
+O WordPress fornece uma interface de administração fácil de usar, permitindo que os usuários gerenciem conteúdo sem precisar escrever código. Essa interface permite a criação de posts, páginas, upload de mídia, e ajustes de configurações do site.
+
+Arquitetura Flexível: O WordPress permite que o usuário crie sites com diferentes tipos de conteúdo, desde blogs simples até sites complexos com múltiplas funcionalidades. Ele suporta a adição de Custom Post Types e Taxonomias para organizar conteúdos de forma personalizada.
+
+Segurança e Atualizações: O WordPress é constantemente atualizado para melhorar a segurança e adicionar novas funcionalidades. Existem também plugins específicos para reforçar a segurança do site.
+
+Resumindo, o WordPress é uma plataforma poderosa e flexível para criação de websites, oferecendo facilidade de uso para iniciantes e robustez para desenvolvedores. Ele é amplamente utilizado em todo o mundo, desde blogs pessoais até sites empresariais complexos.
+
+## O que é o Tainacan? 
+
+Tainacan é um plugin para WordPress que serve como plataforma de repositório digital de código aberto, poderosa e flexível para o WordPress. Gerencie e publique suas coleções digitais tão facilmente como você publica no seu blogue, tendo todas as ferramentas de uma plataforma de repositório profissional. Pode ser usado para a criação de uma coleção digital, uma biblioteca digital ou um repositório digital para sua coleção institucional ou pessoal.
+
+## Como Funciona com o Banco de Dados?
+
+O Tainacan armazena informações sobre as coleções e seus itens no banco de dados do WordPress, utilizando:
+
+- Coleções: Agrupamentos de itens digitais, como fotos, documentos e vídeos.
+- Itens: Cada item é tratado como um "post" no WordPress, com informações como nome, descrição e imagens.
+- Metadados: São informações adicionais (como autor, data e tipo de material) armazenadas como campos personalizados no banco de dados.
+- Taxonomia: Permite organizar e classificar itens por categorias (ex: tipo de material, tema).
+
+## Funcionalidades de Busca e Filtros
+
+O Tainacan permite pesquisar e filtrar itens com base em metadados e categorias, facilitando a navegação no repositório.
+
 ## 3.Implementação do Site do Museu de SJ com o Tainacan
 
 ##  Visão Geral
