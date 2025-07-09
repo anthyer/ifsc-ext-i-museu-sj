@@ -167,12 +167,16 @@ Após a criação do metadado, os links para os objetos 3D poderão ser inserido
 
 Este guia descreve como configurar um ambiente completo com WordPress e o plugin Tainacan utilizando o XAMPP em um servidor Ubuntu Linux sem interface gráfica (modo terminal). A instalação inclui configuração do banco de dados, permissões de arquivos e ativação do plugin Tainacan.
 
+---
+
 ### 6.1. Pré-requisitos
 
 - Ubuntu 20.04 ou superior
 - Acesso root ou `sudo`
 - Conexão com a internet
 - Utilitários: `wget`, `tar`, `unzip`, `nano`
+
+---
 
 ### 6.2. Instalação do XAMPP
 
@@ -182,6 +186,8 @@ chmod +x xampp-linux-x64-8.2.12-0-installer.run
 sudo ./xampp-linux-x64-8.2.12-0-installer.run
 sudo /opt/lampp/lampp start
 ```
+
+---
 
 ### 6.3. Instalação do WordPress
 
@@ -195,48 +201,56 @@ sudo find museu-sj -type d -exec chmod 755 {} \;
 sudo find museu-sj -type f -exec chmod 644 {} \;
 ```
 
-### 6.4. Configuração do Banco de Dados
+---
+
+### 6.4. Configuração do Banco de Dados via phpMyAdmin (Interface Web)
+
+1. Localize o IP do servidor Ubuntu:
 
 ```bash
-sudo /opt/lampp/bin/mysql -u root
+ip a | grep inet
 ```
 
-```sql
-CREATE DATABASE museu_db DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'museu_user'@'localhost' IDENTIFIED BY 'senha_forte';
-GRANT ALL PRIVILEGES ON museu_db.* TO 'museu_user'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
-```
+2. Acesse o phpMyAdmin no navegador:
 
-### 6.5. Configuração do WordPress
+`http://<IP_DO_SERVIDOR>/phpmyadmin`
 
-```bash
-cp museu-sj/wp-config-sample.php museu-sj/wp-config.php
-nano museu-sj/wp-config.php
-```
+3. Clique em Bases de dados e crie a base museu_db com collation utf8mb4_unicode_ci.
 
-Atualize os campos:
+---
 
-```php
-define( 'DB_NAME', 'museu_db' );
-define( 'DB_USER', 'museu_user' );
-define( 'DB_PASSWORD', 'senha_forte' );
-define( 'DB_HOST', 'localhost' );
-```
+### 6.5 Acesso à Instalação via Navegador
 
-### 6.6. Instalação do Plugin Tainacan
+1. No navegador de outro computador na rede, acesse:
 
-```bash
-cd museu-sj/wp-content/plugins
-wget https://github.com/tainacan/tainacan/releases/latest/download/tainacan.zip
-unzip tainacan.zip
-rm tainacan.zip
-sudo chown -R daemon:daemon tainacan
-sudo find tainacan -type d -exec chmod 755 {} \;
-sudo find tainacan -type f -exec chmod 644 {} \;
-```
+`http://<IP_DO_SERVIDOR>/museu-sj`
 
-Acesse `http://<IP_do_servidor>/museu-sj/wp-admin`, vá até "Plugins" e ative o **Tainacan**.
+2. Siga o assistente de instalação do WordPress:
+
+- Escolha o idioma
+- Insira os dados do banco de dados
+- Informe título do site, usuário, senha e e-mail administrador
+
+---
+
+### 6.6. Instalação do Plugin Tainacan via Interface Web
+
+1. Acesse o painel do WordPress:
+
+`http://<IP_DO_SERVIDOR>/museu-sj/wp-admin`
+
+2. Faça login com o usuário administrador.
+
+3. Vá para `Plugins > Adicionar Novo`
+
+4. Pesquise por "Tainacan".
+
+5. Clique em Instalar agora e depois em Ativar.
+
+---
+
+### 6.7. Uso do Plugin Tainacan
+
+Após a ativação, o Tainacan aparecerá no menu lateral do painel WordPress. A partir daí, configure suas coleções, metadados e comece a gerenciar seu acervo digital.
 
 ---
