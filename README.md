@@ -1,170 +1,164 @@
-## O que é o Wordpress?
+# Documentação do Projeto: Site do Museu de SJ com WordPress e Tainacan
 
-WordPress é um sistema de gerenciamento de conteúdo de código aberto, utilizado para criar, gerenciar e manter sites e blogs. Ele permite que usuários criem websites dinâmicos sem precisar de habilidades avançadas de programação.
+## 1. O que é o WordPress
 
-## Principais Características Técnicas:
+WordPress é um sistema de gerenciamento de conteúdo (CMS) de código aberto, utilizado para criar, gerenciar e manter sites e blogs. Ele permite que usuários criem websites dinâmicos sem necessidade de conhecimentos avançados em programação.
 
-- Código Aberto: O WordPress é gratuito e de código aberto, o que significa que qualquer pessoa pode usar, modificar e distribuir o software.
+### 1.1. Principais Características Técnicas
 
-## Temas e Plugins:
+- **Código Aberto**: O WordPress é gratuito e de código aberto, permitindo que qualquer pessoa utilize, modifique e distribua o software.
+- **Interface de Administração**: Fornece uma interface amigável para criação de posts, páginas, upload de mídia e ajustes de configurações, sem necessidade de escrever código.
+- **Arquitetura Flexível**: Permite a criação de sites simples ou complexos, com suporte a tipos de conteúdo personalizados (Custom Post Types) e taxonomias.
+- **Segurança e Atualizações**: O WordPress é atualizado regularmente para aprimorar a segurança e adicionar funcionalidades. Plugins de segurança também estão disponíveis.
 
-Temas controlam o design e a aparência do site.
+### 1.2. Temas e Plugins
 
-O WordPress fornece uma interface de administração fácil de usar, permitindo que os usuários gerenciem conteúdo sem precisar escrever código. Essa interface permite a criação de posts, páginas, upload de mídia, e ajustes de configurações do site.
+- **Temas**: Controlam o design e a aparência do site.
+- **Plugins**: Adicionam funcionalidades extras ao WordPress, como galerias, formulários de contato, SEO, entre outros.
 
-Arquitetura Flexível: O WordPress permite que o usuário crie sites com diferentes tipos de conteúdo, desde blogs simples até sites complexos com múltiplas funcionalidades. Ele suporta a adição de Custom Post Types e Taxonomias para organizar conteúdos de forma personalizada.
+---
 
-Segurança e Atualizações: O WordPress é constantemente atualizado para melhorar a segurança e adicionar novas funcionalidades. Existem também plugins específicos para reforçar a segurança do site.
+## 2. O que é o Tainacan
 
-Resumindo, o WordPress é uma plataforma poderosa e flexível para criação de websites, oferecendo facilidade de uso para iniciantes e robustez para desenvolvedores. Ele é amplamente utilizado em todo o mundo, desde blogs pessoais até sites empresariais complexos.
+Tainacan é um plugin para WordPress que transforma o CMS em uma plataforma de repositório digital de código aberto. Ele permite que instituições e usuários criem, organizem e publiquem coleções digitais com facilidade e flexibilidade.
 
-## O que é o Tainacan? 
+### 2.1. Principais Recursos
 
-Tainacan é um plugin para WordPress que serve como plataforma de repositório digital de código aberto, poderosa e flexível para o WordPress. Gerencie e publique suas coleções digitais tão facilmente como você publica no seu blogue, tendo todas as ferramentas de uma plataforma de repositório profissional. Pode ser usado para a criação de uma coleção digital, uma biblioteca digital ou um repositório digital para sua coleção institucional ou pessoal.
+- **Coleções**: Agrupamentos de itens digitais como fotos, documentos e vídeos.
+- **Itens**: Cada item é tratado como um post do WordPress, com campos personalizados (metadados).
+- **Metadados**: Informações como autor, data e tipo de material são armazenadas como campos personalizados no banco de dados.
+- **Taxonomias**: Classificação dos itens por categorias, temas e outros critérios.
 
-## Como Funciona com o Banco de Dados?
+---
 
-O Tainacan armazena informações sobre as coleções e seus itens no banco de dados do WordPress, utilizando:
+## 3. Implementação do Site do Museu de SJ com o Tainacan
 
-- Coleções: Agrupamentos de itens digitais, como fotos, documentos e vídeos.
-- Itens: Cada item é tratado como um "post" no WordPress, com informações como nome, descrição e imagens.
-- Metadados: São informações adicionais (como autor, data e tipo de material) armazenadas como campos personalizados no banco de dados.
-- Taxonomia: Permite organizar e classificar itens por categorias (ex: tipo de material, tema).
+### 3.1. Visão Geral
 
-## Funcionalidades de Busca e Filtros
+Este projeto consiste na criação do site oficial do Museu de SJ, utilizando o Tainacan como solução para gestão e exibição do acervo digital.
 
-O Tainacan permite pesquisar e filtrar itens com base em metadados e categorias, facilitando a navegação no repositório.
+### 3.2. Objetivos
 
-## 3.Implementação do Site do Museu de SJ com o Tainacan
+- Disponibilizar um catálogo online acessível e intuitivo.
+- Utilizar o Tainacan para gerenciar metadados, coleções e itens.
+- Garantir uma experiência responsiva e acessível.
+- Integrar com outras ferramentas e serviços do museu.
 
-##  Visão Geral
-Este projeto consiste na criação do site oficial do **Museu de SJ**, utilizando o **Tainacan** como solução principal para a gestão e exibição do acervo digital. O Tainacan é um plugin para WordPress que permite a organização, catalogação e publicação de coleções digitais de forma flexível e personalizável.
+### 3.3. Tecnologias Utilizadas
 
-##  Objetivos
-- Disponibilizar um catálogo online acessível e intuitivo do acervo do museu.
-- Utilizar o Tainacan para gerenciar metadados, coleções e itens culturais.
-- Garantir uma experiência de usuário responsiva e acessível.
-- Integrar o site com outras ferramentas do museu.
+- **WordPress** (CMS)
+- **Tainacan** (plugin de repositório digital)
+- **HTML e CSS** (front-end personalizado)
+- **MySQL** (banco de dados)
 
-##  Tecnologias Utilizadas
-- **WordPress** (CMS base)
-- **Tainacan** (Plugin para coleções digitais)
-- **HTML, CSS**(Front-end personalizado)
-- **MySQL** (Banco de dados)
+### 3.4. Funcionalidades Implementadas
 
-##  Funcionalidades Implementadas
-### Catálogo Digital
-- 📌 Busca avançada e filtros por metadados.
-- 🖼️ Visualização detalhada de itens (imagens, descrição, histórico).
+#### Catálogo Digital
 
-### Gestão de Coleções
-- 🗂️ Organização por categorias, tags e taxonomias.
-- 📤 Importação/exportação em CSV, JSON e outros formatos.
+- Busca avançada e filtros por metadados.
+- Visualização detalhada dos itens (imagens, descrição, histórico).
 
-### Design e Acessibilidade
-- 📱 Layout responsivo (desktop, tablet, mobile).
-- ♿ Compatível com WCAG (contraste, leitores de tela).
+#### Gestão de Coleções
 
+- Organização por categorias, tags e taxonomias.
+- Suporte a importação/exportação em CSV, JSON, entre outros formatos.
 
-##  Instalação e Configuração
-### Pré-requisitos
-- Servidor com **PHP 7.4+** e **MySQL 5.6+**.
-- WordPress instalado.
-- Acesso administrativo ao painel.
+#### Design e Acessibilidade
 
-### Passos
-1. **Instale o Tainacan**:
-   ```bash
-   # Via painel WordPress:
-   Plugins > Adicionar Novo > Buscar "Tainacan" > Instalar e Ativar
+- Layout responsivo (desktop, tablet e celular).
+- Compatibilidade com as diretrizes de acessibilidade (WCAG).
 
+---
 
 ## 4. Inclusão de Objetos 3D no Projeto
 
-Dentro das informações específicas de cada obra cadastrada, há possibilidade de inserção de campo específico para links que direcionam até os objetos 3D das obras. 
+Dentro das informações específicas de cada obra cadastrada, há a possibilidade de inserção de um campo para links que direcionam até os objetos 3D.
 
-Os objetos devem estar disponibilizados na diretório específico para tal, "/opt/lampp/htdocs/objetos3d/<pasta-contendo-objeto>".
+Os objetos devem estar armazenados em um diretório específico:  
+`/opt/lampp/htdocs/objetos3d/<pasta-do-objeto>`
 
-As pastas dos objetos devem estar preparadas para sua visualização na internet, utilizando o endereço "<domínio>/objeto3d/<pasta-contendo-objeto>" é possível visualizá-los em tela cheia.
-
----
+Para visualização, o acesso deve ser feito via URL no seguinte formato:  
+`<domínio>/objeto3d/<pasta-do-objeto>`
 
 ### 4.1. Inserindo os Links via Tainacan
 
-Para inserção dos links como campo dentro das informações da obra, é necessário criar um metadado com esse intuito. Através da interface do Tainacan, basta seguir os passos:
-
-1. Selecionar Tainacan na interface do Wordpress e selecionar Tainacan  
+1. Acesse o menu **Tainacan** no painel do WordPress.  
    ![Imagem 1](img/3d-tutorial-1.png)
 
-2. Selecionar Metadados do repositório  
+2. Clique em **Metadados do Repositório**.  
    ![Imagem 2](img/3d-tutorial-2.png)
 
-3. Selecionar URL  
+3. Adicione um metadado do tipo **URL**.  
    ![Imagem 3](img/3d-tutorial-3.png)
 
-4. Configurar os campos conforme desejado  
+4. Configure os campos conforme necessário.  
    ![Imagem 4](img/3d-tutorial-4.png)
 
----
-
-Com o metadado configurado é possível inserir os links para os objetos 3D ao inserir/editar uma obra.
-
-# 5. Passo a Passo para Implementação de Tour Virtual no Tainacan
-
-## 📌 Pré-requisitos
-- Instalação do Tainacan funcionando
-- Acesso administrativo ao WordPress
-- Arquivos do tour virtual prontos (imagens 360°, modelos 3D ou link de serviço externo)
+Após a criação do metadado, os links para os objetos 3D poderão ser inseridos durante a edição ou criação de uma nova obra.
 
 ---
 
-## 🔧 Método 1: Usando Plugin WP VR (Recomendado)
+## 5. Passo a Passo para Implementação de Tour Virtual no Tainacan
 
-### Passo 1: Instalar o Plugin
-1. No painel WordPress, vá para `Plugins > Adicionar Novo`
-2. Pesquise por "WP VR"
-3. Instale e ative o plugin "WP VR - 360° Image Viewer"
+### 5.1. Pré-requisitos
 
-### Passo 2: Criar o Tour Virtual
-1. Vá para `WP VR > Add New Tour`
-2. Faça upload das imagens 360°
-3. Configure os hotspots e cenas conforme necessário
-4. Publique o tour e copie o shortcode gerado (ex: `[wpvr id="123"]`)
-
-### Passo 3: Integrar com Tainacan
-1. Acesse a coleção desejada no Tainacan
-2. Vá para `Metadados > Adicionar Novo`
-   - Nome: "Tour Virtual"
-   - Tipo: Texto HTML
-   - Opções: Marcar "Exibir como conteúdo do item"
-3. Salve o metadado
-
-### Passo 4: Adicionar Tour a um Item
-1. Edite um item existente ou crie um novo
-2. No campo "Tour Virtual", cole o shortcode do WP VR
-3. Salve o item
+- Tainacan instalado e funcionando.
+- Acesso administrativo ao painel WordPress.
+- Arquivos do tour virtual prontos (imagens 360°, modelos 3D ou links externos).
 
 ---
 
-## 🌐 Método 2: Embed com Iframe (Para serviços externos)
+### 5.2. Método 1: Usando o Plugin WP VR (Recomendado)
 
-### Passo 1: Obter Código de Embed
-1. No serviço de tour virtual (Matterport/Kuula/etc.), localize a opção "Embed" ou "Incorporar"
-2. Copie o código iframe fornecido
+#### Passo 1: Instalação do Plugin
 
-### Passo 2: Configurar Metadado no Tainacan
-1. Na coleção, vá para `Metadados > Adicionar Novo`
-   - Nome: "Tour Virtual Externo"
-   - Tipo: Texto HTML
-   - Opções: Habilitar "Permitir tags HTML"
-2. Salve o metadado
+1. Vá em `Plugins > Adicionar Novo` no painel WordPress.
+2. Pesquise por **WP VR**.
+3. Instale e ative o plugin **WP VR - 360° Image Viewer**.
 
-### Passo 3: Adicionar ao Item
-1. Edite o item desejado
-2. No campo criado, cole o código iframe completo
-3. Ajuste width/height se necessário (ex: `width="100%" height="500px"`)
+#### Passo 2: Criação do Tour Virtual
+
+1. Vá em `WP VR > Add New Tour`.
+2. Faça o upload das imagens 360°.
+3. Configure os hotspots e cenas.
+4. Publique o tour e copie o shortcode gerado (ex: `[wpvr id="123"]`).
+
+#### Passo 3: Integração com Tainacan
+
+1. Acesse a coleção no Tainacan.
+2. Vá em `Metadados > Adicionar Novo`:
+   - Nome: **Tour Virtual**
+   - Tipo: **Texto HTML**
+   - Marque a opção **Exibir como conteúdo do item**
+3. Salve o metadado.
+
+#### Passo 4: Adicionar o Tour a um Item
+
+1. Edite ou crie um item.
+2. Cole o shortcode do tour virtual no campo correspondente.
+3. Salve o item.
 
 ---
 
+### 5.3. Método 2: Embed com Iframe (Para Serviços Externos)
 
+#### Passo 1: Obter o Código de Incorporação
 
+1. Acesse o serviço de tour virtual (como Matterport, Kuula etc.).
+2. Copie o código iframe na opção de incorporação.
+
+#### Passo 2: Criar Metadado no Tainacan
+
+1. Vá em `Metadados > Adicionar Novo`:
+   - Nome: **Tour Virtual Externo**
+   - Tipo: **Texto HTML**
+   - Marque a opção **Permitir tags HTML**
+2. Salve o metadado.
+
+#### Passo 3: Inserir no Item
+
+1. Edite o item desejado.
+2. Cole o código iframe no campo criado.
+3. Ajuste a largura e altura se necessário (ex: `width="100%" height="500px"`).
+
+---
